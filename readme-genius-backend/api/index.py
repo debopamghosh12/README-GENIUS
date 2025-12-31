@@ -7,5 +7,5 @@ app = FastAPI()
 def read_root():
     return {"message": "Readme-Genius Backend is Live!"}
 
-# Helper for Vercel
+# This variable MUST be named 'handler'
 handler = Mangum(app)
